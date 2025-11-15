@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic AI AutoDealer | Autonomous Inventory Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 5px rgba(16, 185, 129, 0.5); }
+            50% { box-shadow: 0 0 20px rgba(16, 185, 129, 0.8); }
+        }
+        .agent-active {
+            animation: pulse-glow 2s infinite;
+        }
+        .activity-item {
+            animation: slideIn 0.3s ease-out;
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="container mx-auto px-4 py-8">
+        
+        <!-- Header -->
+        <div class="mb-8">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h1 class="text-4xl font-bold text-gray-900 mb-2">
+                        🤖 Agentic AI AutoDealer
+                    </h1>
+                    <p class="text-gray-600">Autonomous inventory management powered by AWS Bedrock & Claude</p>
+                </div>
+                
+                <div class="text-right">
+                    <div id="agent-status" class="inline-flex items-center px-4 py-2 rounded-lg bg-green-100 text-green-800 agent-active">
+                        <span class="w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+                        <span class="font-semibold">Agent Active</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-2" id="last-run-time">Last run: Just now</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- KPI Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-6 gap-6 mb-8">
+            <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-blue-500">
+                <div class="text-gray-500 text-sm font-medium">Total Inventory</div>
+                <div class="text-3xl font-bold text-gray-900 mt-2">{{ total_inventory }}</div>
+                <div class="text-sm text-gray-600 mt-1">vehicles</div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-green-500">
+                <div class="text-gray-500 text-sm font-medium">Total Value</div>
+                <div class="text-3xl font-bold text-green-600 mt-2">${{ (total_value / 1000000)|round(1) }}M</div>
+                <div class="text-sm text-gray-600 mt-1">inventory value</div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-yellow-500">
+                <div class="text-gray-500 text-sm font-medium">Avg Days in Stock</div>
+                <div class="text-3xl font-bold text-yellow-600 mt-2">{{ avg_days }}</div>
+                <div class="text-sm text-gray-600 mt-1">days average</div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-red-500">
+                <div class="text-gray-500 text-sm font-medium">Aged Inventory</div>
+                <div class="text-3xl font-bold text-red-600 mt-2">{{ aged_inventory }}</div>
+                <div class="text-sm text-gray-600 mt-1">60+ days</div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-purple-500">
+                <div class="text-gray-500 text-sm font-medium">New Inquiries</div>
+                <div class="text-3xl font-bold text-purple-600 mt-2">{{ new_inquiries }}</div>
+                <div class="text-sm text-gray-600 mt-1">awaiting response</div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-pink-500">
+                <div class="text-gray-500 text-sm font-medium">Hot Leads</div>
+                <div class="text-3xl font-bold text-pink-600 mt-2">{{ hot_leads }}</div>
+                <div class="text-sm text-gray-600 mt-1">ready to buy</div>
+            </div>
+        </div>
+
+        {% include 'components/agent_brain.html' %}
+        {% include 'components/value_metrics.html' %}
+        {% include 'components/ai_content_generator.html' %}
+        {% include 'components/before_after.html' %}
+
+        <!-- Main Content Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+            
+            <!-- Live Activity Feed (takes 2 columns) -->
+            <div class="lg:col-span-2 bg-white rounded-lg shadow-lg">
+                <div class="p-6 border-b flex items-center justify-between">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900">🔴 Live Agent Activity</h2>
+                        <p class="text-gray-600 text-sm mt-1">Real-time autonomous actions</p>
+                    </div>
+                    <button onclick="runAgentNow()" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                        Run Agent Now
+                    </button>
+                </div>
+                <div id="activity-feed" class="p-6 space-y-3 max-h-[600px] overflow-y-auto">
+                    <!-- Activity items will be loaded here -->
+                    <div class="text-center text-gray-500 py-8">
+                        <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto mb-4"></div>
+                        <p>Loading agent activity...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick Actions -->
+            <div class="bg-white rounded-lg shadow-lg">
+                <div class="p-6 border-b">
+                    <h2 class="text-2xl font-bold text-gray-900">⚡ Quick Actions</h2>
+                    <p class="text-gray-600 text-sm mt-1">AI-powered tools</p>
+                </div>
+                <div class="p-6 space-y-4">
+                    <button onclick="generateReport()" class="w-full px-4 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg hover:from-blue-600 hover:to-blue-700 transition flex items-center justify-center">
+                        <span class="mr-2">📊</span>
+                        Generate Market Report
+                    </button>
+                    
+                    <button onclick="optimizeAllPrices()" class="w-full px-4 py-3 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-lg hover:from-green-600 hover:to-green-700 transition flex items-center justify-center">
+                        <span class="mr-2">💰</span>
+                        Optimize All Prices
+                    </button>
+                    
+                    <button onclick="respondToInquiries()" class="w-full px-4 py-3 bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-lg hover:from-purple-600 hover:to-purple-700 transition flex items-center justify-center">
+                        <span class="mr-2">📧</span>
+                        Respond to Inquiries
+                    </button>
+                    
+                    <button onclick="createSocialPosts()" class="w-full px-4 py-3 bg-gradient-to-r from-pink-500 to-pink-600 text-white rounded-lg hover:from-pink-600 hover:to-pink-700 transition flex items-center justify-center">
+                        <span class="mr-2">📱</span>
+                        Create Social Posts
+                    </button>
+                </div>
+                
+                <!-- Top Opportunities -->
+                <div class="p-6 border-t">
+                    <h3 class="font-bold text-gray-900 mb-3">🎯 Top Opportunities</h3>
+                    <div id="top-opportunities" class="space-y-2">
+                        <div class="text-center text-gray-500 py-4">
+                            <div class="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-600 mx-auto mb-2"></div>
+                            <p class="text-sm">Loading...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts Row -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <div id="inventory-chart"></div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <div id="price-chart"></div>
+            </div>
+        </div>
+
+        <!-- Customer Inquiries Table -->
+        <div class="bg-white rounded-lg shadow-lg mb-8">
+            <div class="p-6 border-b">
+                <h2 class="text-2xl font-bold text-gray-900">📧 New Customer Inquiries</h2>
+                <p class="text-gray-600 text-sm mt-1">AI will respond automatically</p>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Customer</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Type</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Vehicle</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Message</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Time</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="inquiries-table" class="divide-y divide-gray-200">
+                        <tr>
+                            <td colspan="6" class="px-6 py-8 text-center text-gray-500">
+                                <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto mb-4"></div>
+                                Loading inquiries...
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center text-gray-500 text-sm mt-12 pb-8">
+            <p class="mb-2">
+                <strong>Tech Stack:</strong> AWS Bedrock (Claude 3.5 Sonnet) • Python Flask • Autonomous AI Agents
+            </p>
+            <p>Built in 24 hours to showcase agentic AI capabilities in automotive retail</p>
+            <p class="mt-2 text-xs">⚠️ Demo Mode: All actions are simulated for demonstration purposes</p>
+        </div>
+    </div>
+
+    <script>
+        // Real-time updates
+        function loadActivityFeed() {
+            fetch('/api/live-activity')
+                .then(response => response.json())
+                .then(data => {
+                    const feed = document.getElementById('activity-feed');
+                    feed.innerHTML = '';
+                    
+                    data.forEach((activity, index) => {
+                        const item = document.createElement('div');
+                        item.className = 'activity-item flex items-start p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition';
+                        item.style.animationDelay = `${index * 0.05}s`;
+                        
+                        const statusColor = activity.status === 'success' ? 'text-green-600' : 'text-red-600';
+                        const time = new Date(activity.timestamp).toLocaleTimeString();
+                        
+                        item.innerHTML = `
+                            <div class="text-2xl mr-4">${activity.icon}</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-medium text-gray-900">${activity.description}</span>
+                                    <span class="text-xs text-gray-500">${time}</span>
+                                </div>
+                                <div class="mt-1">
+                                    <span class="text-xs ${statusColor} font-medium">${activity.status.toUpperCase()}</span>
+                                    <span class="text-xs text-gray-500 ml-2">${activity.type}</span>
+                                </div>
+                            </div>
+                        `;
+                        
+                        feed.appendChild(item);
+                    });
+                });
+        }
+        
+        function loadTopOpportunities() {
+            fetch('/api/top-opportunities')
+                .then(response => response.json())
+                .then(data => {
+                    const container = document.getElementById('top-opportunities');
+                    container.innerHTML = '';
+                    
+                    data.slice(0, 5).forEach(opp => {
+                        const item = document.createElement('div');
+                        item.className = 'p-3 bg-yellow-50 rounded-lg text-sm';
+                        item.innerHTML = `
+                            <div class="font-medium text-gray-900">${opp.year} ${opp.make} ${opp.model}</div>
+                            <div class="text-xs text-gray-600 mt-1">
+                                ${opp.days_in_inventory} days • $${opp.current_price.toLocaleString()}
+                                <span class="text-red-600 ml-2">Score: ${opp.opportunity_score.toFixed(1)}</span>
+                            </div>
+                        `;
+                        container.appendChild(item);
+                    });
+                });
+        }
+        
+        function loadInquiries() {
+            fetch('/api/customer-inquiries')
+                .then(response => response.json())
+                .then(data => {
+                    const tbody = document.getElementById('inquiries-table');
+                    tbody.innerHTML = '';
+                    
+                    data.forEach(inquiry => {
+                        const tr = document.createElement('tr');
+                        tr.className = 'hover:bg-gray-50';
+                        
+                        const typeColors = {
+                            'hot_lead': 'bg-red-100 text-red-800',
+                            'warm_lead': 'bg-yellow-100 text-yellow-800',
+                            'cold_lead': 'bg-blue-100 text-blue-800',
+                            'price_shopper': 'bg-gray-100 text-gray-800'
+                        };
+                        
+                        const time = new Date(inquiry.timestamp).toLocaleString();
+                        
+                        tr.innerHTML = `
+                            <td class="px-6 py-4">
+                                <div class="font-medium text-gray-900">${inquiry.customer_name}</div>
+                                <div class="text-sm text-gray-500">${inquiry.customer_email}</div>
+                            </td>
+                            <td class="px-6 py-4">
+                                <span class="px-2 py-1 text-xs rounded-full ${typeColors[inquiry.customer_type] || 'bg-gray-100'}">${inquiry.customer_type}</span>
+                            </td>
+                            <td class="px-6 py-4 text-sm text-gray-900">${inquiry.stock_number}</td>
+                            <td class="px-6 py-4 text-sm text-gray-600 max-w-xs truncate">${inquiry.message}</td>
+                            <td class="px-6 py-4 text-xs text-gray-500">${time}</td>
+                            <td class="px-6 py-4">
+                                <button class="text-blue-600 hover:text-blue-800 text-sm font-medium">View</button>
+                            </td>
+                        `;
+                        
+                        tbody.appendChild(tr);
+                    });
+                });
+        }
+        
+        function loadCharts() {
+            // Inventory analysis chart
+            fetch('/api/inventory-analysis')
+                .then(response => response.json())
+                .then(data => Plotly.newPlot('inventory-chart', data.data, data.layout));
+            
+            // Price position chart
+            fetch('/api/price-position')
+                .then(response => response.json())
+                .then(data => Plotly.newPlot('price-chart', data.data, data.layout));
+        }
+        
+        function runAgentNow() {
+            const btn = event.target;
+            btn.disabled = true;
+            btn.innerHTML = '<span class="animate-spin mr-2">⏳</span> Running...';
+            
+            fetch('/api/run-agent', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => {
+                    btn.disabled = false;
+                    btn.innerHTML = 'Run Agent Now';
+                    
+                    if (data.success) {
+                        alert('✅ Agent run complete! Check the activity feed.');
+                        loadActivityFeed();
+                    } else {
+                        alert('❌ Error: ' + data.error);
+                    }
+                })
+                .catch(error => {
+                    btn.disabled = false;
+                    btn.innerHTML = 'Run Agent Now';
+                    alert('❌ Error running agent');
+                });
+        }
+        
+        // Placeholder functions for quick actions
+        function generateReport() {
+            alert('📊 Generating comprehensive market report... (Demo feature)');
+        }
+        
+        function optimizeAllPrices() {
+            alert('💰 Optimizing all vehicle prices... (Demo feature)');
+        }
+        
+        function respondToInquiries() {
+            alert('📧 AI is drafting responses to all inquiries... (Demo feature)');
+        }
+        
+        function createSocialPosts() {
+            alert('📱 Creating social media posts... (Demo feature)');
+        }
+        
+        // Initial load
+        window.addEventListener('load', () => {
+            loadActivityFeed();
+            loadTopOpportunities();
+            loadInquiries();
+            loadCharts();
+            
+            // Refresh every 30 seconds
+            setInterval(() => {
+                loadActivityFeed();
+                loadTopOpportunities();
+            }, 30000);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,749 @@
+[
+  {
+    "timestamp": "2025-11-15T10:34:24.113094",
+    "total_actions": 11,
+    "successful_actions": 8,
+    "failed_actions": 3,
+    "actions_by_type": {
+      "price_adjustments": [
+        {
+          "vin": "1FTEW1EP9LFA18425",
+          "status": "failed",
+          "error": "Vehicle not found",
+          "timestamp": "2025-11-15T10:34:24.113094"
+        },
+        {
+          "vin": "2T1BURHE5PC337119",
+          "status": "failed",
+          "error": "Vehicle not found",
+          "timestamp": "2025-11-15T10:34:24.113094"
+        },
+        {
+          "vin": "WDC0G4KB9GF748138",
+          "status": "failed",
+          "error": "Vehicle not found",
+          "timestamp": "2025-11-15T10:34:24.117243"
+        }
+      ],
+      "customer_responses": [
+        {
+          "action_type": "customer_response",
+          "status": "success",
+          "inquiry_id": "INQ20000",
+          "customer_name": "Tammy Lopez",
+          "customer_email": "alicia18@example.net",
+          "subject": "Inquiry about 2022 Chevrolet Equinox",
+          "offer_price": 31507,
+          "strategy": "Provide reassurance about the vehicle's condition and offer a 5% price reduction to incentivize the sale.",
+          "execution_type": "SIMULATED",
+          "email_log": {
+            "to": "alicia18@example.net",
+            "subject": "Inquiry about 2022 Chevrolet Equinox",
+            "body_preview": "Dear Tammy,\n\nThank you for your interest in the 2022 Chevrolet Equinox (stock number STK10013). I'm pleased to confirm that this vehicle has a clean title and is in excellent condition.\n\nAs you can se..."
+          },
+          "timestamp": "2025-11-15T10:34:24.117550"
+        },
+        {
+          "action_type": "customer_response",
+          "status": "success",
+          "inquiry_id": "INQ20006",
+          "customer_name": "Seth Martinez",
+          "customer_email": "jennifer75@example.com",
+          "subject": "Inquiry about 2021 Honda Pilot",
+          "offer_price": 49995,
+          "strategy": "Respond promptly to the hot lead, provide reassurance about the vehicle's condition, and offer to schedule a test drive.",
+          "execution_type": "SIMULATED",
+          "email_log": {
+            "to": "jennifer75@example.com",
+            "subject": "Inquiry about 2021 Honda Pilot",
+            "body_preview": "Dear Seth,\n\nThank you for your interest in the 2021 Honda Pilot (stock number STK10008). I'm excited to let you know that this vehicle is still available, and you're welcome to come see it today.\n\nThe..."
+          },
+          "timestamp": "2025-11-15T10:34:24.117550"
+        },
+        {
+          "action_type": "customer_response",
+          "status": "success",
+          "inquiry_id": "INQ20009",
+          "customer_name": "Chelsea Palmer",
+          "customer_email": "larsentrevor@example.net",
+          "subject": "Inquiry about price discounts",
+          "offer_price": 67132,
+          "strategy": "Provide value justification for the pricing and offer to discuss any potential discounts or incentives, while maintaining a firm stance on the price.",
+          "execution_type": "SIMULATED",
+          "email_log": {
+            "to": "larsentrevor@example.net",
+            "subject": "Inquiry about price discounts",
+            "body_preview": "Dear Chelsea,\n\nThank you for your inquiry about the 2024 Ford F-150 (stock number STK10044). I understand you're comparing prices across different dealerships, and I'm happy to provide some informatio..."
+          },
+          "timestamp": "2025-11-15T10:34:24.117550"
+        }
+      ],
+      "social_media_posts": [
+        {
+          "action_type": "social_media_post",
+          "status": "success",
+          "platform": "instagram",
+          "content_preview": "Attention car enthusiasts! Check out this stunning 2024 BMW 3 Series (stock number STK10017) in our ...",
+          "vehicle_vin": "WBA8E9G51R0P60805",
+          "hashtags": [
+            "BMWSeries3",
+            "LuxuryCarDeals",
+            "PremiumAutoSales"
+          ],
+          "execution_type": "SIMULATED",
+          "timestamp": "2025-11-15T10:34:24.117550"
+        },
+        {
+          "action_type": "social_media_post",
+          "status": "success",
+          "platform": "facebook",
+          "content_preview": "Looking for a rugged and capable truck? Our 2024 Ford F-150 (stock number STK10034) is turning heads...",
+          "vehicle_vin": "1FTEW1EP9LFA18425",
+          "hashtags": [
+            "FordF150",
+            "TruckLife",
+            "PremiumAutoSales"
+          ],
+          "execution_type": "SIMULATED",
+          "timestamp": "2025-11-15T10:34:24.117550"
+        }
+      ],
+      "urgent_alerts": [
+        {
+          "action_type": "urgent_alert",
+          "status": "logged",
+          "priority": "high",
+          "category": "aging_inventory",
+          "message": "The following vehicles have been in stock for over 90 days and require urgent attention: STK10016 (2021 Mercedes-Benz GLC), STK10036 (2021 Chevrolet Tahoe), STK10006 (2023 Mercedes-Benz GLE).",
+          "recommended_action": "Implement a more aggressive pricing strategy, such as a 10% reduction, to quickly sell these vehicles and free up capital.",
+          "timestamp": "2025-11-15T10:34:24.117550"
+        },
+        {
+          "action_type": "urgent_alert",
+          "status": "logged",
+          "priority": "medium",
+          "category": "pricing",
+          "message": "The 2024 Mercedes-Benz C-Class (stock number STK10043) is priced higher than the market average. Consider adjusting the price to be more competitive.",
+          "recommended_action": "Analyze the market data and adjust the price of the 2024 Mercedes-Benz C-Class to be within 5% of the market average.",
+          "timestamp": "2025-11-15T10:34:24.117550"
+        },
+        {
+          "action_type": "urgent_alert",
+          "status": "logged",
+          "priority": "low",
+          "category": "customer",
+          "message": "Customers Thomas Anderson (INQ20002) and Diamond Simmons (INQ20005) have expressed interest in vehicles but have not yet received a response.",
+          "recommended_action": "Reach out to these customers with a personalized response, providing more information about the vehicles they inquired about and offering to schedule a test drive.",
+          "timestamp": "2025-11-15T10:34:24.117550"
+        }
+      ]
+    },
+    "details": []
+  },
+  {
+    "timestamp": "2025-11-15T10:54:46.465989",
+    "total_actions": 10,
+    "successful_actions": 7,
+    "failed_actions": 3,
+    "actions_by_type": {
+      "price_adjustments": [
+        {
+          "vin": "1GCHSAEA0F1234567",
+          "status": "failed",
+          "error": "Vehicle not found",
+          "timestamp": "2025-11-15T10:54:46.467031"
+        },
+        {
+          "vin": "2T1BURHE7FC123456",
+          "status": "failed",
+          "error": "Vehicle not found",
+          "timestamp": "2025-11-15T10:54:46.467031"
+        },
+        {
+          "vin": "WDC0G4KB2FV123456",
+          "status": "failed",
+          "error": "Vehicle not found",
+          "timestamp": "2025-11-15T10:54:46.468033"
+        }
+      ],
+      "customer_responses": [
+        {
+          "action_type": "customer_response",
+          "status": "success",
+          "inquiry_id": "INQ20000",
+          "customer_name": "Tammy Lopez",
+          "customer_email": "alicia18@example.net",
+          "subject": "Inquiry about 2022 Chevrolet Equinox",
+          "offer_price": 31507.41,
+          "strategy": "Provide a direct response to the customer's inquiry, addressing their specific concern about the title. Offer the recommended discounted price to help move this aged inventory.",
+          "execution_type": "SIMULATED",
+          "email_log": {
+            "to": "alicia18@example.net",
+            "subject": "Inquiry about 2022 Chevrolet Equinox",
+            "body_preview": "Dear Tammy,\n\nThank you for your interest in the 2022 Chevrolet Equinox (stock number STK10013). I can confirm that this vehicle has a clean title and is in excellent condition.\n\nI would be happy to pr..."
+          },
+          "timestamp": "2025-11-15T10:54:46.468033"
+        },
+        {
+          "action_type": "customer_response",
+          "status": "success",
+          "inquiry_id": "INQ20006",
+          "customer_name": "Seth Martinez",
+          "customer_email": "jennifer75@example.com",
+          "subject": "Inquiry about 2021 Honda Pilot",
+          "offer_price": null,
+          "strategy": "Respond promptly to this hot lead, offering to schedule a test drive as soon as possible. No price adjustment is recommended at this time, as the vehicle is in high demand.",
+          "execution_type": "SIMULATED",
+          "email_log": {
+            "to": "jennifer75@example.com",
+            "subject": "Inquiry about 2021 Honda Pilot",
+            "body_preview": "Dear Seth,\n\nThank you for your interest in the 2021 Honda Pilot (stock number STK10008). I would be happy to schedule a test drive for you today. Please let me know what time would work best for you, ..."
+          },
+          "timestamp": "2025-11-15T10:54:46.468033"
+        },
+        {
+          "action_type": "customer_response",
+          "status": "success",
+          "inquiry_id": "INQ20009",
+          "customer_name": "Chelsea Palmer",
+          "customer_email": "larsentrevor@example.net",
+          "subject": "Inquiry about pricing",
+          "offer_price": null,
+          "strategy": "Respond to this price shopper inquiry by emphasizing the value proposition of the vehicle and offering to discuss potential discounts, but without providing a specific discounted price upfront.",
+          "execution_type": "SIMULATED",
+          "email_log": {
+            "to": "larsentrevor@example.net",
+            "subject": "Inquiry about pricing",
+            "body_preview": "Dear Chelsea,\n\nThank you for your inquiry about the pricing of our vehicles. At Premium Auto Sales, we strive to offer competitive and fair prices that reflect the quality and condition of our invento..."
+          },
+          "timestamp": "2025-11-15T10:54:46.468033"
+        }
+      ],
+      "social_media_posts": [
+        {
+          "action_type": "social_media_post",
+          "status": "success",
+          "platform": "instagram",
+          "content_preview": "Check out this stunning 2024 Ford F-150 (stock number STK10034) with only 15 inquiries and 160 views...",
+          "vehicle_vin": "1FTEW1E5XRFC12345",
+          "hashtags": [
+            "PremiumAutoSales",
+            "FordF150",
+            "TruckLife"
+          ],
+          "execution_type": "SIMULATED",
+          "timestamp": "2025-11-15T10:54:46.468033"
+        },
+        {
+          "action_type": "social_media_post",
+          "status": "success",
+          "platform": "facebook",
+          "content_preview": "Looking for a luxurious driving experience? Our 2023 BMW 3 Series (stock number STK10017) is turning...",
+          "vehicle_vin": "WBA8B9G56J1234567",
+          "hashtags": [
+            "PremiumAutoSales",
+            "BMW3Series",
+            "LuxuryPerformance"
+          ],
+          "execution_type": "SIMULATED",
+          "timestamp": "2025-11-15T10:54:46.468033"
+        }
+      ],
+      "urgent_alerts": [
+        {
+          "action_type": "urgent_alert",
+          "status": "logged",
+          "priority": "high",
+          "category": "aging_inventory",
+          "message": "The 2021 Mercedes-Benz GLC (stock number STK10016) has been in inventory for 70 days, which is above the 60-day threshold. Immediate action is required to price this vehicle competitively and promote it to potential buyers.",
+          "recommended_action": "Reduce the price of the 2021 Mercedes-Benz GLC by 5% to $45,619.23 to help move this aged inventory. Prioritize this vehicle for social media promotion and consider offering additional incentives to generate interest.",
+          "timestamp": "2025-11-15T10:54:46.468033"
+        },
+        {
+          "action_type": "urgent_alert",
+          "status": "logged",
+          "priority": "medium",
+          "category": "customer",
+          "message": "The customer inquiry from Thomas Anderson (INQ20002) and Diamond Simmons (INQ20005) have not been responded to. These cold leads should be followed up on to build relationships and potentially convert them to sales.",
+          "recommended_action": "Respond to the inquiries from Thomas Anderson and Diamond Simmons, providing them with additional information about the vehicles they're interested in and offering to schedule a test drive. Use an educational and relationship-building approach to nurture these cold leads.",
+          "timestamp": "2025-11-15T10:54:46.468033"
+        }
+      ]
+    },
+    "details": []
+  },
+  {
+    "timestamp": "2025-11-15T11:08:43.195303",
+    "total_actions": 20,
+    "successful_actions": 1,
+    "failed_actions": 19,
+    "actions_by_type": {
+      "price_adjustments": [
+        {
+          "vin": "STK10013",
+          "status": "failed",
+          "error": "Vehicle not found",
+          "timestamp": "2025-11-15T11:08:43.195303"
+        },
+        {
+          "vin": "STK10040",
+          "status": "failed",
+          "error": "Vehicle not found",
+          "timestamp": "2025-11-15T11:08:43.195303"
+        },
+        {
+          "vin": "STK10016",
+          "status": "failed",
+          "error": "Vehicle not found",
+          "timestamp": "2025-11-15T11:08:43.195303"
+        },
+        {
+          "vin": "STK10036",
+          "status": "failed",
+          "error": "Vehicle not found",
+          "timestamp": "2025-11-15T11:08:43.195303"
+        },
+        {
+          "vin": "STK10006",
+          "status": "failed",
+          "error": "Vehicle not found",
+          "timestamp": "2025-11-15T11:08:43.195303"
+        },
+        {
+          "vin": "STK10034",
+          "status": "failed",
+          "error": "Vehicle not found",
+          "timestamp": "2025-11-15T11:08:43.195303"
+        },
+        {
+          "vin": "STK10017",
+          "status": "failed",
+          "error": "Vehicle not found",
+          "timestamp": "2025-11-15T11:08:43.195303"
+        },
+        {
+          "vin": "STK10030",
+          "status": "failed",
+          "error": "Vehicle not found",
+          "timestamp": "2025-11-15T11:08:43.206086"
+        },
+        {
+          "vin": "STK10043",
+          "status": "failed",
+          "error": "Vehicle not found",
+          "timestamp": "2025-11-15T11:08:43.207100"
+        },
+        {
+          "vin": "STK10029",
+          "status": "failed",
+          "error": "Vehicle not found",
+          "timestamp": "2025-11-15T11:08:43.208141"
+        }
+      ],
+      "customer_responses": [
+        {
+          "inquiry_id": "INQ20000",
+          "status": "failed",
+          "error": "'NoneType' object is not subscriptable",
+          "timestamp": "2025-11-15T11:08:43.209023"
+        },
+        {
+          "inquiry_id": "INQ20002",
+          "status": "failed",
+          "error": "'NoneType' object is not subscriptable",
+          "timestamp": "2025-11-15T11:08:43.210191"
+        },
+        {
+          "inquiry_id": "INQ20005",
+          "status": "failed",
+          "error": "'NoneType' object is not subscriptable",
+          "timestamp": "2025-11-15T11:08:43.211375"
+        },
+        {
+          "inquiry_id": "INQ20006",
+          "status": "failed",
+          "error": "'NoneType' object is not subscriptable",
+          "timestamp": "2025-11-15T11:08:43.212379"
+        },
+        {
+          "inquiry_id": "INQ20009",
+          "status": "failed",
+          "error": "'NoneType' object is not subscriptable",
+          "timestamp": "2025-11-15T11:08:43.213377"
+        },
+        {
+          "inquiry_id": "INQ20011",
+          "status": "failed",
+          "error": "'NoneType' object is not subscriptable",
+          "timestamp": "2025-11-15T11:08:43.213377"
+        },
+        {
+          "inquiry_id": "INQ20021",
+          "status": "failed",
+          "error": "'NoneType' object is not subscriptable",
+          "timestamp": "2025-11-15T11:08:43.214241"
+        }
+      ],
+      "social_media_posts": [
+        {
+          "platform": "Facebook",
+          "status": "failed",
+          "error": "object of type 'NoneType' has no len()",
+          "timestamp": "2025-11-15T11:08:43.214241"
+        },
+        {
+          "platform": "Instagram",
+          "status": "failed",
+          "error": "object of type 'NoneType' has no len()",
+          "timestamp": "2025-11-15T11:08:43.214241"
+        }
+      ],
+      "urgent_alerts": [
+        {
+          "action_type": "urgent_alert",
+          "status": "logged",
+          "priority": null,
+          "category": null,
+          "message": "The following vehicles have been in stock for 60+ days and require immediate attention: Chevrolet Equinox (STK10013), Toyota Corolla (STK10040), Mercedes-Benz GLC (STK10016), Chevrolet Tahoe (STK10036), and Mercedes-Benz GLE (STK10006). Consider price reductions of 5-10% to move these vehicles.",
+          "recommended_action": null,
+          "timestamp": "2025-11-15T11:08:43.214241"
+        }
+      ]
+    },
+    "details": []
+  },
+  {
+    "timestamp": "2025-11-15T11:10:04.191445",
+    "total_actions": 19,
+    "successful_actions": 5,
+    "failed_actions": 14,
+    "actions_by_type": {
+      "price_adjustments": [
+        {
+          "vin": "1GNSCBKC2PJ123456",
+          "status": "failed",
+          "error": "Vehicle not found",
+          "timestamp": "2025-11-15T11:10:04.191445"
+        },
+        {
+          "vin": "2T1BURHE9PC123456",
+          "status": "failed",
+          "error": "Vehicle not found",
+          "timestamp": "2025-11-15T11:10:04.191445"
+        },
+        {
+          "vin": "WDC0G4KB1FV123456",
+          "status": "failed",
+          "error": "Vehicle not found",
+          "timestamp": "2025-11-15T11:10:04.191445"
+        },
+        {
+          "vin": "1GNSCBKC3PJ123456",
+          "status": "failed",
+          "error": "Vehicle not found",
+          "timestamp": "2025-11-15T11:10:04.191445"
+        },
+        {
+          "vin": "WDC0G8KB3FV123456",
+          "status": "failed",
+          "error": "Vehicle not found",
+          "timestamp": "2025-11-15T11:10:04.191445"
+        }
+      ],
+      "customer_responses": [
+        {
+          "inquiry_id": "INQ20000",
+          "status": "failed",
+          "error": "'NoneType' object is not subscriptable",
+          "timestamp": "2025-11-15T11:10:04.191445"
+        },
+        {
+          "inquiry_id": "INQ20002",
+          "status": "failed",
+          "error": "'NoneType' object is not subscriptable",
+          "timestamp": "2025-11-15T11:10:04.191445"
+        },
+        {
+          "inquiry_id": "INQ20005",
+          "status": "failed",
+          "error": "'NoneType' object is not subscriptable",
+          "timestamp": "2025-11-15T11:10:04.191445"
+        },
+        {
+          "inquiry_id": "INQ20006",
+          "status": "failed",
+          "error": "'NoneType' object is not subscriptable",
+          "timestamp": "2025-11-15T11:10:04.191445"
+        },
+        {
+          "inquiry_id": "INQ20009",
+          "status": "failed",
+          "error": "'NoneType' object is not subscriptable",
+          "timestamp": "2025-11-15T11:10:04.191445"
+        },
+        {
+          "inquiry_id": "INQ20011",
+          "status": "failed",
+          "error": "'NoneType' object is not subscriptable",
+          "timestamp": "2025-11-15T11:10:04.207219"
+        },
+        {
+          "inquiry_id": "INQ20021",
+          "status": "failed",
+          "error": "'NoneType' object is not subscriptable",
+          "timestamp": "2025-11-15T11:10:04.207219"
+        }
+      ],
+      "social_media_posts": [
+        {
+          "platform": "Facebook",
+          "status": "failed",
+          "error": "object of type 'NoneType' has no len()",
+          "timestamp": "2025-11-15T11:10:04.207219"
+        },
+        {
+          "platform": "Instagram",
+          "status": "failed",
+          "error": "object of type 'NoneType' has no len()",
+          "timestamp": "2025-11-15T11:10:04.207219"
+        }
+      ],
+      "urgent_alerts": [
+        {
+          "action_type": "urgent_alert",
+          "status": "logged",
+          "priority": null,
+          "category": null,
+          "message": null,
+          "recommended_action": null,
+          "timestamp": "2025-11-15T11:10:04.207219"
+        },
+        {
+          "action_type": "urgent_alert",
+          "status": "logged",
+          "priority": null,
+          "category": null,
+          "message": null,
+          "recommended_action": null,
+          "timestamp": "2025-11-15T11:10:04.207219"
+        },
+        {
+          "action_type": "urgent_alert",
+          "status": "logged",
+          "priority": null,
+          "category": null,
+          "message": null,
+          "recommended_action": null,
+          "timestamp": "2025-11-15T11:10:04.207219"
+        },
+        {
+          "action_type": "urgent_alert",
+          "status": "logged",
+          "priority": null,
+          "category": null,
+          "message": null,
+          "recommended_action": null,
+          "timestamp": "2025-11-15T11:10:04.207219"
+        },
+        {
+          "action_type": "urgent_alert",
+          "status": "logged",
+          "priority": null,
+          "category": null,
+          "message": null,
+          "recommended_action": null,
+          "timestamp": "2025-11-15T11:10:04.208329"
+        }
+      ]
+    },
+    "details": []
+  },
+  {
+    "timestamp": "2025-11-15T11:13:51.963937",
+    "total_actions": 5,
+    "successful_actions": 5,
+    "failed_actions": 0,
+    "actions_by_type": {
+      "price_adjustments": [
+        {
+          "action_type": "price_adjustment",
+          "status": "success",
+          "vin": "DDY88210414",
+          "stock_number": "STK10003",
+          "old_price": 55183.13,
+          "new_price": 52923.86,
+          "adjustment_amount": -2259.269999999997,
+          "adjustment_percent": -4.094131666688709,
+          "reason": "Vehicle has been in inventory for 130 days, exceeding the 60-day threshold. Recommending a 5% price reduction to increase turnover.",
+          "confidence": 0.85,
+          "urgency": "high",
+          "execution_type": "SIMULATED",
+          "timestamp": "2025-11-15T11:13:51.974269"
+        },
+        {
+          "action_type": "price_adjustment",
+          "status": "success",
+          "vin": "EYL34972185",
+          "stock_number": "STK10011",
+          "old_price": 37820.87,
+          "new_price": 36231.83,
+          "adjustment_amount": -1589.0400000000009,
+          "adjustment_percent": -4.201489812370791,
+          "reason": "Vehicle has been in inventory for 112 days, exceeding the 60-day threshold. Recommending a 5% price reduction to increase turnover.",
+          "confidence": 0.85,
+          "urgency": "high",
+          "execution_type": "SIMULATED",
+          "timestamp": "2025-11-15T11:13:51.974269"
+        },
+        {
+          "action_type": "price_adjustment",
+          "status": "success",
+          "vin": "BEO95291004",
+          "stock_number": "STK10024",
+          "old_price": 51884.99,
+          "new_price": 49790.99,
+          "adjustment_amount": -2094.0,
+          "adjustment_percent": -4.0358492889754825,
+          "reason": "Vehicle has been in inventory for 111 days, exceeding the 60-day threshold. Recommending a 5% price reduction to increase turnover.",
+          "confidence": 0.85,
+          "urgency": "high",
+          "execution_type": "SIMULATED",
+          "timestamp": "2025-11-15T11:13:51.974269"
+        }
+      ],
+      "customer_responses": [
+        {
+          "action_type": "customer_response",
+          "status": "success",
+          "inquiry_id": "INQ20006",
+          "customer_name": "Seth Martinez",
+          "customer_email": "jennifer75@example.com",
+          "subject": "Regarding your interest in the 2021 Honda Pilot",
+          "offer_price": null,
+          "strategy": "Respond promptly to a hot lead, offer to schedule a test drive, and provide a personalized and attentive customer experience.",
+          "execution_type": "SIMULATED",
+          "email_log": {
+            "to": "jennifer75@example.com",
+            "subject": "Regarding your interest in the 2021 Honda Pilot",
+            "body_preview": "Dear Seth,\n\nThank you for your interest in the 2021 Honda Pilot (Stock #STK10008, VIN: YKP02102705). I'm pleased to let you know that this vehicle is still available, and we would be happy to have you..."
+          },
+          "timestamp": "2025-11-15T11:13:51.974269"
+        },
+        {
+          "action_type": "customer_response",
+          "status": "success",
+          "inquiry_id": "INQ20009",
+          "customer_name": "Chelsea Palmer",
+          "customer_email": "larsentrevor@example.net",
+          "subject": "Pricing information for your vehicle of interest",
+          "offer_price": null,
+          "strategy": "Respond to a price shopper by highlighting the vehicle's value and offering to provide more details, rather than immediately offering a discount.",
+          "execution_type": "SIMULATED",
+          "email_log": {
+            "to": "larsentrevor@example.net",
+            "subject": "Pricing information for your vehicle of interest",
+            "body_preview": "Dear Chelsea,\n\nThank you for your inquiry about the vehicle you're interested in (Stock #STK10044, VIN: EOX77256480). We understand you're comparing prices and would like to know what discounts we can..."
+          },
+          "timestamp": "2025-11-15T11:13:51.974269"
+        }
+      ],
+      "social_media_posts": [],
+      "urgent_alerts": []
+    },
+    "details": []
+  },
+  {
+    "timestamp": "2025-11-15T11:52:48.900036",
+    "total_actions": 5,
+    "successful_actions": 5,
+    "failed_actions": 0,
+    "actions_by_type": {
+      "price_adjustments": [
+        {
+          "action_type": "price_adjustment",
+          "status": "success",
+          "vin": "DDY88210414",
+          "stock_number": "STK10003",
+          "old_price": 55183.13,
+          "new_price": 52424.97,
+          "adjustment_amount": -2758.159999999996,
+          "adjustment_percent": -4.998194194493854,
+          "reason": "Aged inventory over 60 days",
+          "confidence": 0.85,
+          "urgency": "high",
+          "execution_type": "SIMULATED",
+          "timestamp": "2025-11-15T11:52:48.900036"
+        },
+        {
+          "action_type": "price_adjustment",
+          "status": "success",
+          "vin": "EYL34972185",
+          "stock_number": "STK10011",
+          "old_price": 37820.87,
+          "new_price": 35929.83,
+          "adjustment_amount": -1891.0400000000009,
+          "adjustment_percent": -4.999990745850111,
+          "reason": "Aged inventory over 60 days",
+          "confidence": 0.85,
+          "urgency": "high",
+          "execution_type": "SIMULATED",
+          "timestamp": "2025-11-15T11:52:48.900036"
+        },
+        {
+          "action_type": "price_adjustment",
+          "status": "success",
+          "vin": "BEO95291004",
+          "stock_number": "STK10024",
+          "old_price": 51884.99,
+          "new_price": 49290.74,
+          "adjustment_amount": -2594.25,
+          "adjustment_percent": -5.00000096366984,
+          "reason": "Aged inventory over 60 days",
+          "confidence": 0.85,
+          "urgency": "high",
+          "execution_type": "SIMULATED",
+          "timestamp": "2025-11-15T11:52:48.900036"
+        }
+      ],
+      "customer_responses": [
+        {
+          "action_type": "customer_response",
+          "status": "success",
+          "inquiry_id": "INQ20006",
+          "customer_name": "Seth Martinez",
+          "customer_email": "jennifer75@example.com",
+          "subject": "2021 Honda Pilot Available for Test Drive",
+          "offer_price": null,
+          "strategy": "Engage the hot lead with a prompt response and offer a test drive to build rapport and close the sale.",
+          "execution_type": "SIMULATED",
+          "email_log": {
+            "to": "jennifer75@example.com",
+            "subject": "2021 Honda Pilot Available for Test Drive",
+            "body_preview": "Dear Seth,\n\nThank you for your interest in the 2021 Honda Pilot. I'm pleased to inform you that the vehicle is available for a test drive today. Please let me know if you would like to schedule an app..."
+          },
+          "timestamp": "2025-11-15T11:52:48.900036"
+        },
+        {
+          "action_type": "customer_response",
+          "status": "success",
+          "inquiry_id": "INQ20009",
+          "customer_name": "Chelsea Palmer",
+          "customer_email": "larsentrevor@example.net",
+          "subject": "Pricing and Discounts at Premium Auto Sales",
+          "offer_price": null,
+          "strategy": "Provide value justification to the price shopper and offer to discuss specific pricing and discounts to build trust and close the sale.",
+          "execution_type": "SIMULATED",
+          "email_log": {
+            "to": "larsentrevor@example.net",
+            "subject": "Pricing and Discounts at Premium Auto Sales",
+            "body_preview": "Dear Chelsea,\n\nThank you for your inquiry about the vehicle at Premium Auto Sales. We understand that price is an important factor in your decision-making process, and we are committed to providing yo..."
+          },
+          "timestamp": "2025-11-15T11:52:48.900036"
+        }
+      ],
+      "social_media_posts": [],
+      "urgent_alerts": []
+    },
+    "details": []
+  }
+]

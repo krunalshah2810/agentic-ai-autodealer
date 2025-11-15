@@ -1,0 +1,240 @@
+make,model,year,mileage,price,dealer_name,distance_miles,listing_date,condition,trim
+Ford,Explorer,2024,1000,54656.13,Penske Automotive,17,2025-09-17T10:15:52.552325,New,XLE
+Ford,Explorer,2024,5821,57015.27,City Auto Group,26,2025-10-07T10:15:52.552325,New,Sport
+Ford,Explorer,2024,11474,54675.46,City Auto Group,5,2025-09-30T10:15:52.552325,New,LE
+Ford,Explorer,2024,1000,59095.76,Sonic Automotive,6,2025-10-22T10:15:52.552325,New,Base
+Ford,Explorer,2024,8765,53794.86,Local Motors,23,2025-09-23T10:15:52.552325,New,Base
+Ford,Explorer,2024,1000,54806.7,CarMax,15,2025-11-04T10:15:52.552325,New,Limited
+Ford,Explorer,2024,2308,56294.62,City Auto Group,44,2025-09-21T10:15:52.552325,New,Base
+Chevrolet,Equinox,2022,27948,38627.52,CarMax,26,2025-11-05T10:15:52.552325,Certified Pre-Owned,Sport
+Chevrolet,Equinox,2022,24687,38840.56,Lithia Motors,7,2025-11-09T10:15:52.552325,Certified Pre-Owned,XLE
+Chevrolet,Equinox,2022,32505,38775.02,City Auto Group,32,2025-11-14T10:15:52.552325,Certified Pre-Owned,LE
+Chevrolet,Equinox,2022,21648,37449.51,Penske Automotive,7,2025-11-14T10:15:52.552325,Certified Pre-Owned,Limited
+Chevrolet,Equinox,2022,32670,37661.56,AutoNation,7,2025-09-19T10:15:52.552325,Certified Pre-Owned,Sport
+Chevrolet,Equinox,2022,19500,40811.72,City Auto Group,29,2025-10-04T10:15:52.552325,Certified Pre-Owned,LE
+Mercedes-Benz,GLC,2024,2207,72876.93,Lithia Motors,32,2025-10-05T10:15:52.552325,New,Limited
+Mercedes-Benz,GLC,2024,6280,67051.61,Lithia Motors,11,2025-09-20T10:15:52.552325,New,LE
+Mercedes-Benz,GLC,2024,8870,65631.65,AutoNation,8,2025-09-28T10:15:52.552325,New,XLE
+Mercedes-Benz,GLC,2024,1000,68702.77,Local Motors,13,2025-09-29T10:15:52.552325,New,XLE
+Mercedes-Benz,GLC,2024,7680,69171.73,City Auto Group,33,2025-09-29T10:15:52.552325,New,LE
+BMW,5 Series,2023,3973,51761.09,AutoNation,28,2025-09-21T10:15:52.552325,Used,Limited
+BMW,5 Series,2023,15868,56296.02,Lithia Motors,20,2025-11-10T10:15:52.552325,Used,XLE
+BMW,5 Series,2023,9250,59007.98,Local Motors,3,2025-09-18T10:15:52.552325,Used,LE
+BMW,5 Series,2023,5963,58244.37,Local Motors,15,2025-10-02T10:15:52.552325,Used,Base
+BMW,5 Series,2023,6698,58019.02,Penske Automotive,45,2025-10-10T10:15:52.552325,Used,Limited
+BMW,5 Series,2023,19721,55925.39,City Auto Group,38,2025-11-10T10:15:52.552325,Used,LE
+Ford,F-150,2022,29125,26514.2,Local Motors,14,2025-11-05T10:15:52.553312,Certified Pre-Owned,Base
+Ford,F-150,2022,21470,27889.49,Lithia Motors,18,2025-10-19T10:15:52.553312,Certified Pre-Owned,LE
+Ford,F-150,2022,29694,27491.27,Lithia Motors,22,2025-10-06T10:15:52.553312,Certified Pre-Owned,Base
+Ford,F-150,2022,21224,27574.33,Local Motors,40,2025-10-17T10:15:52.553312,Certified Pre-Owned,XLE
+Ford,F-150,2022,24469,26830.67,Penske Automotive,29,2025-11-14T10:15:52.553312,Certified Pre-Owned,Base
+Ford,F-150,2022,36125,26458.62,Lithia Motors,44,2025-11-01T10:15:52.553312,Certified Pre-Owned,Limited
+BMW,3 Series,2024,1000,62148.93,Penske Automotive,36,2025-10-29T10:15:52.553312,New,XLE
+BMW,3 Series,2024,8168,59138.28,Sonic Automotive,19,2025-10-26T10:15:52.553312,New,Sport
+BMW,3 Series,2024,3666,67546.06,Local Motors,12,2025-11-04T10:15:52.553312,New,Sport
+Mercedes-Benz,GLE,2023,17172,87295.82,Sonic Automotive,27,2025-11-09T10:15:52.553312,Certified Pre-Owned,LE
+Mercedes-Benz,GLE,2023,20510,86124.86,Lithia Motors,28,2025-11-05T10:15:52.553312,Certified Pre-Owned,Base
+Mercedes-Benz,GLE,2023,20698,82284.35,Penske Automotive,4,2025-11-12T10:15:52.553312,Certified Pre-Owned,Limited
+Mercedes-Benz,GLE,2023,14046,86118.16,CarMax,21,2025-09-23T10:15:52.553312,Certified Pre-Owned,XLE
+Mercedes-Benz,GLE,2023,18082,88407.66,Sonic Automotive,6,2025-10-29T10:15:52.553312,Certified Pre-Owned,Base
+Mercedes-Benz,GLE,2023,21017,83277.04,CarMax,10,2025-10-06T10:15:52.553312,Certified Pre-Owned,LE
+Tesla,Model 3,2021,22362,42116.79,Sonic Automotive,39,2025-10-26T10:15:52.553312,Certified Pre-Owned,LE
+Tesla,Model 3,2021,34909,42251.74,Sonic Automotive,13,2025-11-07T10:15:52.553312,Certified Pre-Owned,XLE
+Tesla,Model 3,2021,30476,44107.57,Sonic Automotive,24,2025-09-18T10:15:52.553312,Certified Pre-Owned,XLE
+Tesla,Model 3,2021,28124,45850.02,City Auto Group,10,2025-10-27T10:15:52.553312,Certified Pre-Owned,Base
+Tesla,Model 3,2021,33731,39973.2,City Auto Group,19,2025-10-21T10:15:52.553312,Certified Pre-Owned,Limited
+Tesla,Model 3,2021,29705,41043.39,Lithia Motors,2,2025-10-02T10:15:52.553312,Certified Pre-Owned,Sport
+Tesla,Model 3,2021,22711,43052.6,CarMax,32,2025-10-19T10:15:52.553312,Certified Pre-Owned,LE
+Honda,Pilot,2021,42814,30595.42,AutoNation,35,2025-10-19T10:15:52.553312,Certified Pre-Owned,Sport
+Honda,Pilot,2021,35585,31602.12,City Auto Group,44,2025-09-21T10:15:52.553312,Certified Pre-Owned,XLE
+Honda,Pilot,2021,45094,30657.93,Lithia Motors,35,2025-09-20T10:15:52.553312,Certified Pre-Owned,Limited
+Mercedes-Benz,E-Class,2023,7484,53809.32,Local Motors,7,2025-10-23T10:15:52.553312,Used,Limited
+Mercedes-Benz,E-Class,2023,16998,59691.11,CarMax,2,2025-09-27T10:15:52.553312,Used,Sport
+Mercedes-Benz,E-Class,2023,9110,56844.95,Local Motors,9,2025-09-19T10:15:52.553312,Used,LE
+Honda,Accord,2023,8072,29258.69,Sonic Automotive,4,2025-10-15T10:15:52.553312,Used,Limited
+Honda,Accord,2023,23630,28725.37,CarMax,14,2025-10-27T10:15:52.554272,Used,Limited
+Honda,Accord,2023,15543,28699.98,City Auto Group,5,2025-09-18T10:15:52.554272,Used,XLE
+Honda,Accord,2023,12279,29646.06,CarMax,39,2025-10-16T10:15:52.554272,Used,LE
+Honda,Accord,2023,19333,32345.22,AutoNation,6,2025-10-27T10:15:52.554272,Used,XLE
+Ford,Mustang,2021,25187,37747.63,Penske Automotive,38,2025-11-06T10:15:52.554272,Used,Limited
+Ford,Mustang,2021,33354,37023.79,CarMax,26,2025-11-06T10:15:52.554272,Used,Base
+Ford,Mustang,2021,36115,38984.41,Sonic Automotive,39,2025-10-03T10:15:52.554272,Used,Limited
+BMW,5 Series,2024,1000,61156.06,Lithia Motors,4,2025-09-24T10:15:52.554272,New,XLE
+BMW,5 Series,2024,7981,61392.4,Sonic Automotive,14,2025-10-01T10:15:52.554272,New,XLE
+BMW,5 Series,2024,6830,63578.3,AutoNation,43,2025-09-27T10:15:52.554272,New,XLE
+BMW,5 Series,2024,12018,63012.34,Local Motors,30,2025-11-07T10:15:52.554272,New,Sport
+BMW,5 Series,2024,1000,64286.09,CarMax,31,2025-11-11T10:15:52.554272,New,LE
+Chevrolet,Equinox,2022,21902,33082.84,Sonic Automotive,37,2025-10-03T10:15:52.554272,Used,Limited
+Chevrolet,Equinox,2022,29434,34511.57,Penske Automotive,6,2025-10-28T10:15:52.554272,Used,XLE
+Chevrolet,Equinox,2022,30423,33728.51,Lithia Motors,44,2025-10-27T10:15:52.554272,Used,Base
+Chevrolet,Equinox,2022,19499,34062.2,Sonic Automotive,33,2025-10-21T10:15:52.554272,Used,Sport
+Chevrolet,Equinox,2022,30327,34100.61,AutoNation,43,2025-10-25T10:15:52.554272,Used,Base
+Chevrolet,Equinox,2022,32952,34599.55,Local Motors,27,2025-09-25T10:15:52.554272,Used,Sport
+Mercedes-Benz,C-Class,2021,37554,56613.4,CarMax,42,2025-10-25T10:15:52.554779,Used,Limited
+Mercedes-Benz,C-Class,2021,23350,56181.43,City Auto Group,44,2025-10-27T10:15:52.554779,Used,LE
+Mercedes-Benz,C-Class,2021,23618,63043.87,Lithia Motors,10,2025-09-22T10:15:52.554779,Used,Sport
+Mercedes-Benz,C-Class,2021,36639,57599.74,City Auto Group,28,2025-11-03T10:15:52.554779,Used,Limited
+Mercedes-Benz,C-Class,2021,27962,55697.85,Lithia Motors,36,2025-10-23T10:15:52.554779,Used,Sport
+Mercedes-Benz,C-Class,2021,28278,60933.83,CarMax,23,2025-10-09T10:15:52.554779,Used,LE
+Honda,Civic,2021,35845,20025.1,CarMax,8,2025-09-17T10:15:52.554779,Used,Limited
+Honda,Civic,2021,42420,19565.13,City Auto Group,7,2025-10-18T10:15:52.554779,Used,LE
+Honda,Civic,2021,45319,20614.95,Local Motors,42,2025-10-30T10:15:52.554779,Used,Limited
+Mercedes-Benz,GLC,2021,31805,44666.22,CarMax,12,2025-10-02T10:15:52.554779,Certified Pre-Owned,XLE
+Mercedes-Benz,GLC,2021,31085,47802.88,Lithia Motors,43,2025-10-25T10:15:52.554779,Certified Pre-Owned,Limited
+Mercedes-Benz,GLC,2021,32389,49057.18,Local Motors,41,2025-11-04T10:15:52.554779,Certified Pre-Owned,Sport
+Mercedes-Benz,GLC,2021,24295,46333.91,Penske Automotive,21,2025-10-09T10:15:52.554779,Certified Pre-Owned,Base
+Mercedes-Benz,GLC,2021,32870,46840.99,Lithia Motors,20,2025-10-22T10:15:52.554779,Certified Pre-Owned,Base
+BMW,3 Series,2023,17329,76553.67,Lithia Motors,19,2025-09-26T10:15:52.554779,Used,Sport
+BMW,3 Series,2023,8633,72436.99,CarMax,31,2025-10-12T10:15:52.554779,Used,LE
+BMW,3 Series,2023,20236,80292.55,City Auto Group,40,2025-09-19T10:15:52.554779,Used,Sport
+Honda,Accord,2024,1000,44013.41,Sonic Automotive,33,2025-10-28T10:15:52.554779,New,Limited
+Honda,Accord,2024,7788,42226.4,Local Motors,15,2025-10-03T10:15:52.554779,New,Base
+Honda,Accord,2024,4876,43873.46,Penske Automotive,13,2025-11-09T10:15:52.554779,New,Sport
+Honda,Accord,2024,5872,48189.73,Penske Automotive,5,2025-11-09T10:15:52.554779,New,LE
+Honda,Accord,2024,1000,42201.79,City Auto Group,5,2025-10-07T10:15:52.554779,New,XLE
+Honda,Civic,2022,18605,36613.29,CarMax,19,2025-09-27T10:15:52.554779,Used,Base
+Honda,Civic,2022,27083,41676.99,CarMax,5,2025-09-27T10:15:52.554779,Used,Sport
+Honda,Civic,2022,21948,40578.64,Local Motors,5,2025-09-21T10:15:52.554779,Used,XLE
+Honda,Civic,2022,19121,41036.93,CarMax,29,2025-10-31T10:15:52.554779,Used,Base
+Honda,Civic,2022,18642,36103.11,Sonic Automotive,8,2025-10-27T10:15:52.554779,Used,XLE
+Honda,Civic,2022,31541,36045.14,Local Motors,26,2025-09-29T10:15:52.554779,Used,Base
+Honda,Civic,2022,27737,39821.31,CarMax,20,2025-11-11T10:15:52.554779,Used,Limited
+Tesla,Model S,2023,15374,79184.35,Penske Automotive,43,2025-10-26T10:15:52.554779,Used,Base
+Tesla,Model S,2023,6544,74928.78,Lithia Motors,19,2025-10-01T10:15:52.554779,Used,LE
+Tesla,Model S,2023,4671,71351.93,Local Motors,28,2025-10-08T10:15:52.554779,Used,Sport
+Tesla,Model S,2023,2966,81340.03,Lithia Motors,2,2025-09-28T10:15:52.554779,Used,LE
+Tesla,Model S,2023,2655,79539.42,City Auto Group,39,2025-10-20T10:15:52.554779,Used,Limited
+Tesla,Model S,2023,13479,72462.72,CarMax,9,2025-10-29T10:15:52.554779,Used,Limited
+Toyota,Highlander,2023,19244,28972.3,City Auto Group,34,2025-11-01T10:15:52.555937,Certified Pre-Owned,LE
+Toyota,Highlander,2023,15144,27712.36,CarMax,23,2025-11-06T10:15:52.555937,Certified Pre-Owned,LE
+Toyota,Highlander,2023,22354,31774.11,City Auto Group,23,2025-09-19T10:15:52.555937,Certified Pre-Owned,LE
+Toyota,Highlander,2023,11802,27945.52,City Auto Group,20,2025-10-31T10:15:52.555937,Certified Pre-Owned,Limited
+Toyota,Highlander,2023,17852,31548.5,Lithia Motors,31,2025-09-23T10:15:52.555937,Certified Pre-Owned,Base
+Toyota,Highlander,2023,16252,31560.42,Sonic Automotive,19,2025-10-26T10:15:52.555937,Certified Pre-Owned,Sport
+Ford,Bronco,2021,46287,34013.98,Lithia Motors,39,2025-09-17T10:15:52.555937,Certified Pre-Owned,LE
+Ford,Bronco,2021,42411,32753.04,AutoNation,29,2025-10-24T10:15:52.555937,Certified Pre-Owned,Limited
+Ford,Bronco,2021,34235,34809.25,Sonic Automotive,11,2025-10-14T10:15:52.555937,Certified Pre-Owned,LE
+Ford,Bronco,2021,43616,31551.76,Penske Automotive,28,2025-10-10T10:15:52.555937,Certified Pre-Owned,Sport
+Mercedes-Benz,GLC,2023,9515,67794.52,Penske Automotive,7,2025-11-04T10:15:52.555937,Certified Pre-Owned,Limited
+Mercedes-Benz,GLC,2023,14821,66312.18,Sonic Automotive,40,2025-09-16T10:15:52.555937,Certified Pre-Owned,Base
+Mercedes-Benz,GLC,2023,20484,63652.36,AutoNation,22,2025-10-08T10:15:52.555937,Certified Pre-Owned,Limited
+Mercedes-Benz,GLC,2023,13249,66736.72,Local Motors,40,2025-10-02T10:15:52.555937,Certified Pre-Owned,LE
+Mercedes-Benz,GLC,2023,21057,72768.77,Local Motors,2,2025-09-29T10:15:52.555937,Certified Pre-Owned,Sport
+Mercedes-Benz,GLC,2023,16254,62587.25,AutoNation,11,2025-10-12T10:15:52.555937,Certified Pre-Owned,Sport
+BMW,5 Series,2022,28943,55761.61,AutoNation,15,2025-09-16T10:15:52.555937,Used,Base
+BMW,5 Series,2022,33773,47772.16,AutoNation,30,2025-11-08T10:15:52.555937,Used,Limited
+BMW,5 Series,2022,29302,48131.11,CarMax,36,2025-09-17T10:15:52.555937,Used,Sport
+BMW,5 Series,2022,27227,49745.51,CarMax,9,2025-10-28T10:15:52.555937,Used,LE
+BMW,5 Series,2022,33476,51179.53,Penske Automotive,4,2025-10-29T10:15:52.555937,Used,Limited
+BMW,5 Series,2022,29595,53543.57,Local Motors,34,2025-09-28T10:15:52.555937,Used,LE
+BMW,5 Series,2022,30885,54414.1,Lithia Motors,25,2025-11-03T10:15:52.555937,Used,Base
+Chevrolet,Traverse,2023,16497,33878.36,Penske Automotive,34,2025-10-17T10:15:52.555937,Used,LE
+Chevrolet,Traverse,2023,15844,33356.98,Penske Automotive,12,2025-09-20T10:15:52.555937,Used,Base
+Chevrolet,Traverse,2023,13188,30203.89,Lithia Motors,14,2025-10-04T10:15:52.555937,Used,LE
+Chevrolet,Traverse,2023,14797,33668.91,Local Motors,12,2025-10-28T10:15:52.555937,Used,Sport
+Honda,Civic,2021,37911,30758.37,Lithia Motors,16,2025-09-17T10:15:52.555937,Certified Pre-Owned,LE
+Honda,Civic,2021,37848,29194.62,AutoNation,21,2025-09-24T10:15:52.555937,Certified Pre-Owned,LE
+Honda,Civic,2021,43669,27966.7,Local Motors,15,2025-10-28T10:15:52.555937,Certified Pre-Owned,XLE
+Honda,Civic,2021,33940,27715.2,Sonic Automotive,39,2025-10-21T10:15:52.555937,Certified Pre-Owned,XLE
+Honda,Civic,2021,29523,28814.3,AutoNation,22,2025-10-21T10:15:52.555937,Certified Pre-Owned,Limited
+Honda,Civic,2021,45087,31655.71,City Auto Group,44,2025-11-11T10:15:52.555937,Certified Pre-Owned,LE
+Mercedes-Benz,GLE,2022,17598,72181.61,City Auto Group,9,2025-10-11T10:15:52.556897,Certified Pre-Owned,XLE
+Mercedes-Benz,GLE,2022,10471,74351.14,Penske Automotive,18,2025-11-11T10:15:52.556897,Certified Pre-Owned,Limited
+Mercedes-Benz,GLE,2022,23646,76142.25,Sonic Automotive,8,2025-09-27T10:15:52.556897,Certified Pre-Owned,Base
+BMW,X3,2023,11507,79001.21,Penske Automotive,16,2025-10-28T10:15:52.556897,Certified Pre-Owned,LE
+BMW,X3,2023,15304,73240.91,Sonic Automotive,16,2025-10-13T10:15:52.556897,Certified Pre-Owned,LE
+BMW,X3,2023,18027,81201.24,CarMax,44,2025-10-09T10:15:52.556897,Certified Pre-Owned,Sport
+Tesla,Model 3,2024,1130,92115.82,Local Motors,4,2025-10-22T10:15:52.556897,New,XLE
+Tesla,Model 3,2024,7879,94699.95,City Auto Group,29,2025-10-25T10:15:52.556897,New,XLE
+Tesla,Model 3,2024,6053,88558.34,AutoNation,4,2025-09-22T10:15:52.556897,New,Limited
+BMW,X3,2022,20029,53764.53,Lithia Motors,32,2025-11-10T10:15:52.556897,Certified Pre-Owned,XLE
+BMW,X3,2022,14687,47012.88,Local Motors,19,2025-09-26T10:15:52.556897,Certified Pre-Owned,Base
+BMW,X3,2022,20804,53999.7,AutoNation,37,2025-09-16T10:15:52.556897,Certified Pre-Owned,XLE
+BMW,X3,2022,28462,46103.09,AutoNation,24,2025-11-13T10:15:52.556897,Certified Pre-Owned,Limited
+BMW,X3,2022,17068,46814.41,CarMax,17,2025-11-04T10:15:52.556897,Certified Pre-Owned,LE
+BMW,X3,2022,29558,49350.7,Penske Automotive,26,2025-10-26T10:15:52.556897,Certified Pre-Owned,Sport
+Mercedes-Benz,GLC,2022,18437,71542.79,Sonic Automotive,30,2025-11-04T10:15:52.556897,Certified Pre-Owned,XLE
+Mercedes-Benz,GLC,2022,17789,71813.39,Penske Automotive,30,2025-11-02T10:15:52.556897,Certified Pre-Owned,LE
+Mercedes-Benz,GLC,2022,20088,71552.9,Penske Automotive,4,2025-09-20T10:15:52.556897,Certified Pre-Owned,XLE
+Mercedes-Benz,GLC,2022,28115,70557.45,Sonic Automotive,13,2025-10-14T10:15:52.556897,Certified Pre-Owned,XLE
+Mercedes-Benz,GLC,2022,27184,65240.96,Local Motors,42,2025-10-04T10:15:52.556897,Certified Pre-Owned,LE
+Honda,Pilot,2023,8688,37650.95,Lithia Motors,39,2025-10-24T10:15:52.556897,Certified Pre-Owned,Base
+Honda,Pilot,2023,12934,38018.27,AutoNation,11,2025-09-21T10:15:52.556897,Certified Pre-Owned,XLE
+Honda,Pilot,2023,15650,37921.8,CarMax,43,2025-10-06T10:15:52.556897,Certified Pre-Owned,Sport
+Chevrolet,Silverado,2024,1000,52668.26,Local Motors,44,2025-10-17T10:15:52.556897,New,Sport
+Chevrolet,Silverado,2024,1000,49077.86,Penske Automotive,28,2025-11-07T10:15:52.556897,New,Base
+Chevrolet,Silverado,2024,5298,53419.78,Sonic Automotive,23,2025-09-28T10:15:52.556897,New,LE
+Chevrolet,Silverado,2024,1000,48723.1,Local Motors,23,2025-11-07T10:15:52.556897,New,LE
+Chevrolet,Silverado,2024,8246,51794.09,Local Motors,12,2025-11-05T10:15:52.556897,New,Limited
+Ford,F-150,2024,9461,68105.91,City Auto Group,30,2025-10-11T10:15:52.556897,New,Limited
+Ford,F-150,2024,1528,68655.38,City Auto Group,2,2025-09-17T10:15:52.556897,New,Limited
+Ford,F-150,2024,1000,65795.9,Local Motors,12,2025-10-07T10:15:52.556897,New,Sport
+Ford,F-150,2024,8340,67670.71,CarMax,4,2025-10-09T10:15:52.556897,New,XLE
+Honda,Pilot,2023,12266,40194.52,Sonic Automotive,25,2025-11-08T10:15:52.556897,Used,LE
+Honda,Pilot,2023,9967,43813.67,City Auto Group,35,2025-09-26T10:15:52.556897,Used,LE
+Honda,Pilot,2023,15395,45620.31,City Auto Group,42,2025-10-05T10:15:52.556897,Used,LE
+Chevrolet,Tahoe,2021,41803,32537.77,AutoNation,7,2025-10-26T10:15:52.557936,Used,Base
+Chevrolet,Tahoe,2021,44347,34800.93,CarMax,15,2025-09-16T10:15:52.557936,Used,Limited
+Chevrolet,Tahoe,2021,33572,34216.89,Sonic Automotive,5,2025-10-31T10:15:52.557936,Used,Base
+Chevrolet,Tahoe,2021,40106,32802.35,AutoNation,26,2025-11-03T10:15:52.557936,Used,LE
+Mercedes-Benz,E-Class,2021,32651,62120.42,Lithia Motors,18,2025-11-07T10:15:52.557936,Certified Pre-Owned,Base
+Mercedes-Benz,E-Class,2021,29471,60433.23,AutoNation,24,2025-10-12T10:15:52.557936,Certified Pre-Owned,LE
+Mercedes-Benz,E-Class,2021,28213,60609.41,Penske Automotive,3,2025-11-03T10:15:52.557936,Certified Pre-Owned,Sport
+Mercedes-Benz,E-Class,2021,35841,57788.57,AutoNation,17,2025-11-09T10:15:52.557936,Certified Pre-Owned,Limited
+Mercedes-Benz,E-Class,2021,28658,58682.13,AutoNation,42,2025-10-01T10:15:52.557936,Certified Pre-Owned,Sport
+Tesla,Model 3,2023,2909,87189.77,City Auto Group,27,2025-10-21T10:15:52.557936,Certified Pre-Owned,Sport
+Tesla,Model 3,2023,12690,88251.75,City Auto Group,40,2025-10-10T10:15:52.557936,Certified Pre-Owned,Sport
+Tesla,Model 3,2023,14507,86048.48,CarMax,32,2025-09-27T10:15:52.557936,Certified Pre-Owned,XLE
+Honda,Pilot,2022,21480,32233.89,Lithia Motors,17,2025-10-14T10:15:52.557936,Used,LE
+Honda,Pilot,2022,23770,30154.16,Penske Automotive,26,2025-09-26T10:15:52.557936,Used,LE
+Honda,Pilot,2022,29504,32120.06,Penske Automotive,40,2025-10-23T10:15:52.557936,Used,Limited
+Toyota,Corolla,2023,22988,28898.11,Lithia Motors,10,2025-09-19T10:15:52.557936,Certified Pre-Owned,LE
+Toyota,Corolla,2023,11751,32509.08,Local Motors,37,2025-09-25T10:15:52.557936,Certified Pre-Owned,Sport
+Toyota,Corolla,2023,17857,30037.34,Penske Automotive,3,2025-11-07T10:15:52.557936,Certified Pre-Owned,Sport
+Ford,F-150,2021,46981,43520.2,AutoNation,11,2025-09-25T10:15:52.557936,Used,Base
+Ford,F-150,2021,39660,43057.87,Penske Automotive,20,2025-11-01T10:15:52.557936,Used,Sport
+Ford,F-150,2021,40091,45442.51,Lithia Motors,3,2025-10-01T10:15:52.557936,Used,XLE
+Ford,F-150,2021,46146,43986.49,Sonic Automotive,23,2025-10-03T10:15:52.557936,Used,Base
+Ford,F-150,2021,35723,40746.8,Lithia Motors,4,2025-10-20T10:15:52.557936,Used,Limited
+Honda,Civic,2022,22978,29255.76,City Auto Group,15,2025-09-19T10:15:52.557936,Used,XLE
+Honda,Civic,2022,24805,29095.79,Sonic Automotive,20,2025-11-04T10:15:52.557936,Used,Sport
+Honda,Civic,2022,27007,31122.89,City Auto Group,42,2025-10-26T10:15:52.557936,Used,XLE
+Honda,Civic,2022,25517,31822.55,CarMax,17,2025-11-03T10:15:52.557936,Used,Base
+Honda,Civic,2022,33583,32774.33,Sonic Automotive,42,2025-10-04T10:15:52.557936,Used,Sport
+Mercedes-Benz,C-Class,2024,1000,95695.82,Local Motors,36,2025-10-19T10:15:52.557936,New,Base
+Mercedes-Benz,C-Class,2024,1000,87408.95,Sonic Automotive,43,2025-10-18T10:15:52.557936,New,LE
+Mercedes-Benz,C-Class,2024,1000,95881.64,City Auto Group,5,2025-09-18T10:15:52.557936,New,XLE
+Mercedes-Benz,C-Class,2024,2239,89371.42,AutoNation,31,2025-10-01T10:15:52.557936,New,LE
+Chevrolet,Traverse,2021,47931,37687.9,AutoNation,44,2025-09-22T10:15:52.557936,Certified Pre-Owned,Base
+Chevrolet,Traverse,2021,46280,36842.0,Sonic Automotive,11,2025-10-21T10:15:52.557936,Certified Pre-Owned,LE
+Chevrolet,Traverse,2021,33272,32468.77,Local Motors,4,2025-10-09T10:15:52.557936,Certified Pre-Owned,Limited
+Chevrolet,Traverse,2021,44724,36920.62,Sonic Automotive,32,2025-09-16T10:15:52.558935,Certified Pre-Owned,Limited
+Chevrolet,Traverse,2021,44676,35998.18,AutoNation,40,2025-10-09T10:15:52.558935,Certified Pre-Owned,Sport
+Chevrolet,Traverse,2021,38440,36592.16,Lithia Motors,25,2025-10-07T10:15:52.558935,Certified Pre-Owned,Limited
+Chevrolet,Traverse,2021,43315,32862.08,CarMax,34,2025-10-30T10:15:52.558935,Certified Pre-Owned,LE
+Toyota,Corolla,2023,15727,40138.11,Sonic Automotive,30,2025-10-02T10:15:52.558935,Certified Pre-Owned,XLE
+Toyota,Corolla,2023,6109,39040.5,Lithia Motors,45,2025-10-01T10:15:52.558935,Certified Pre-Owned,Sport
+Toyota,Corolla,2023,5063,37719.42,Local Motors,32,2025-10-05T10:15:52.558935,Certified Pre-Owned,Sport
+Toyota,Corolla,2023,9678,38183.62,City Auto Group,12,2025-11-01T10:15:52.558935,Certified Pre-Owned,Limited
+Toyota,Corolla,2023,11318,40663.54,AutoNation,14,2025-10-16T10:15:52.558935,Certified Pre-Owned,Limited
+Toyota,Corolla,2023,11195,37260.61,AutoNation,17,2025-09-27T10:15:52.558935,Certified Pre-Owned,XLE
+Toyota,Corolla,2023,13149,37284.31,Lithia Motors,31,2025-10-12T10:15:52.558935,Certified Pre-Owned,Sport
+Ford,F-150,2021,30964,34187.85,CarMax,37,2025-10-07T10:15:52.558935,Used,LE
+Ford,F-150,2021,28224,32792.4,Local Motors,18,2025-09-19T10:15:52.558935,Used,Sport
+Ford,F-150,2021,37622,34247.29,Penske Automotive,36,2025-10-07T10:15:52.558935,Used,Sport
+Ford,F-150,2021,30109,32457.83,Local Motors,28,2025-09-21T10:15:52.558935,Used,Limited
+Ford,F-150,2021,36212,34413.35,Lithia Motors,35,2025-10-12T10:15:52.558935,Used,Base
+Ford,F-150,2021,40155,33267.68,CarMax,45,2025-11-05T10:15:52.558935,Used,Limited
+Chevrolet,Equinox,2024,2125,33353.42,City Auto Group,25,2025-10-25T10:15:52.558935,New,XLE
+Chevrolet,Equinox,2024,9861,34877.56,Local Motors,13,2025-10-08T10:15:52.558935,New,Limited
+Chevrolet,Equinox,2024,3076,35765.12,City Auto Group,17,2025-10-24T10:15:52.558935,New,Limited
+Tesla,Model Y,2024,5286,53901.13,CarMax,9,2025-09-17T10:15:52.558935,New,XLE
+Tesla,Model Y,2024,4360,56251.24,AutoNation,29,2025-11-13T10:15:52.558935,New,XLE
+Tesla,Model Y,2024,6299,55492.25,Local Motors,32,2025-10-11T10:15:52.558935,New,LE
+Tesla,Model Y,2024,2975,60462.28,Local Motors,42,2025-10-19T10:15:52.558935,New,Base
+Tesla,Model Y,2024,1000,59243.25,City Auto Group,44,2025-11-02T10:15:52.558935,New,Base
+Tesla,Model Y,2024,1000,61673.21,Local Motors,33,2025-10-21T10:15:52.558935,New,XLE
+Tesla,Model Y,2024,6266,58703.53,City Auto Group,41,2025-10-08T10:15:52.558935,New,XLE
+Honda,Accord,2021,24376,31782.19,Penske Automotive,13,2025-10-09T10:15:52.558935,Used,Base
+Honda,Accord,2021,24543,33594.13,AutoNation,11,2025-10-15T10:15:52.558935,Used,XLE
+Honda,Accord,2021,32685,34270.65,CarMax,8,2025-11-11T10:15:52.558935,Used,Sport

@@ -1,0 +1,120 @@
+<!-- Real-Time Value Metrics -->
+<div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg shadow-2xl p-8 mb-8 text-white">
+    <div class="text-center mb-6">
+        <h2 class="text-3xl font-bold mb-2">💎 Value Created by AI Agent</h2>
+        <p class="text-blue-100">Real-time impact metrics</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="bg-white bg-opacity-20 rounded-lg p-6 text-center backdrop-blur">
+            <div class="text-sm mb-2 text-blue-100">Revenue Potential</div>
+            <div class="text-4xl font-bold mb-1">$<span id="counter-revenue">0</span></div>
+            <div class="text-sm text-green-300">↑ From optimized pricing</div>
+        </div>
+        
+        <div class="bg-white bg-opacity-20 rounded-lg p-6 text-center backdrop-blur">
+            <div class="text-sm mb-2 text-blue-100">Time Saved</div>
+            <div class="text-4xl font-bold mb-1"><span id="counter-time">0</span>h</div>
+            <div class="text-sm text-green-300">↑ Automated tasks</div>
+        </div>
+        
+        <div class="bg-white bg-opacity-20 rounded-lg p-6 text-center backdrop-blur">
+            <div class="text-sm mb-2 text-blue-100">Leads Engaged</div>
+            <div class="text-4xl font-bold mb-1"><span id="counter-leads">0</span></div>
+            <div class="text-sm text-green-300">↑ AI responses sent</div>
+        </div>
+        
+        <div class="bg-white bg-opacity-20 rounded-lg p-6 text-center backdrop-blur">
+            <div class="text-sm mb-2 text-blue-100">Actions Taken</div>
+            <div class="text-4xl font-bold mb-1"><span id="counter-actions">0</span></div>
+            <div class="text-sm text-green-300">↑ Autonomous decisions</div>
+        </div>
+    </div>
+    
+    <div class="mt-6 text-center">
+        <button onclick="simulateAgentWork()" class="px-8 py-3 bg-white text-purple-600 rounded-lg font-bold hover:bg-gray-100 transition shadow-lg">
+            ▶️ Watch Agent Work (30s Demo)
+        </button>
+    </div>
+</div>
+
+<script>
+function animateCounter(element, start, end, duration) {
+    let startTime = null;
+    
+    function animate(currentTime) {
+        if (!startTime) startTime = currentTime;
+        const progress = Math.min((currentTime - startTime) / duration, 1);
+        
+        const currentValue = Math.floor(progress * (end - start) + start);
+        element.textContent = currentValue.toLocaleString();
+        
+        if (progress < 1) {
+            requestAnimationFrame(animate);
+        }
+    }
+    
+    requestAnimationFrame(animate);
+}
+
+function simulateAgentWork() {
+    // Disable button during animation
+    const btn = event.target;
+    btn.disabled = true;
+    btn.innerHTML = '⏳ Running...';
+    
+    // Animate all counters
+    animateCounter(document.getElementById('counter-revenue'), 0, 47000, 2000);
+    animateCounter(document.getElementById('counter-time'), 0, 24, 2000);
+    animateCounter(document.getElementById('counter-leads'), 0, 18, 2000);
+    animateCounter(document.getElementById('counter-actions'), 0, 47, 2000);
+    
+    // Add some fake activity to the feed
+    setTimeout(() => addFakeActivity('💰 Reduced price on 2021 Honda Civic: $28,500 → $26,495'), 500);
+    setTimeout(() => addFakeActivity('📧 Sent personalized offer to Sarah Johnson'), 1200);
+    setTimeout(() => addFakeActivity('💰 Adjusted 2023 Toyota RAV4: $34,200 → $32,950'), 2000);
+    setTimeout(() => addFakeActivity('📱 Posted featured vehicle to Instagram'), 2800);
+    setTimeout(() => addFakeActivity('📧 Responded to 3 hot leads with AI-crafted emails'), 3500);
+    setTimeout(() => addFakeActivity('⚠️ Flagged 2 aged vehicles for manager review'), 4200);
+    
+    // Re-enable button
+    setTimeout(() => {
+        btn.disabled = false;
+        btn.innerHTML = '▶️ Watch Agent Work (30s Demo)';
+    }, 5000);
+}
+
+function addFakeActivity(description) {
+    const feed = document.getElementById('activity-feed');
+    if (!feed) return;
+    
+    const item = document.createElement('div');
+    item.className = 'activity-item flex items-start p-4 bg-green-50 rounded-lg border-2 border-green-200';
+    
+    item.innerHTML = `
+        <div class="text-2xl mr-4">✨</div>
+        <div class="flex-1">
+            <div class="flex items-center justify-between">
+                <span class="font-medium text-gray-900">${description}</span>
+                <span class="text-xs text-gray-500">${new Date().toLocaleTimeString()}</span>
+            </div>
+            <div class="mt-1">
+                <span class="text-xs text-green-600 font-medium">DEMO ACTION</span>
+                <span class="text-xs text-gray-500 ml-2">Simulated for demonstration</span>
+            </div>
+        </div>
+    `;
+    
+    feed.insertBefore(item, feed.firstChild);
+    
+    // Scroll to top
+    feed.scrollTop = 0;
+    
+    // Remove after 15 seconds
+    setTimeout(() => {
+        item.style.transition = 'opacity 0.5s';
+        item.style.opacity = '0';
+        setTimeout(() => item.remove(), 500);
+    }, 15000);
+}
+</script>

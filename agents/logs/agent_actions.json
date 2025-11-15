@@ -1,0 +1,258 @@
+[
+  {
+    "timestamp": "2025-11-15T10:30:16.708156",
+    "total_actions": 10,
+    "successful_actions": 7,
+    "failed_actions": 3,
+    "actions_by_type": {
+      "price_adjustments": [
+        {
+          "vin": "1GNSCHKC7LR153426",
+          "status": "failed",
+          "error": "Vehicle not found",
+          "timestamp": "2025-11-15T10:30:16.708156"
+        },
+        {
+          "vin": "4T1B11HK2LU103208",
+          "status": "failed",
+          "error": "Vehicle not found",
+          "timestamp": "2025-11-15T10:30:16.708156"
+        },
+        {
+          "vin": "WDC0G4KB1JV012345",
+          "status": "failed",
+          "error": "Vehicle not found",
+          "timestamp": "2025-11-15T10:30:16.708156"
+        }
+      ],
+      "customer_responses": [
+        {
+          "action_type": "customer_response",
+          "status": "success",
+          "inquiry_id": "INQ20000",
+          "customer_name": "Tammy Lopez",
+          "customer_email": "alicia18@example.net",
+          "subject": "Inquiry about 2022 Chevrolet Equinox",
+          "offer_price": 31507.41,
+          "strategy": "Tammy is a warm lead, so I've responded promptly with a personalized offer and highlighted the vehicle's condition and the special pricing to help close the sale.",
+          "execution_type": "SIMULATED",
+          "email_log": {
+            "to": "alicia18@example.net",
+            "subject": "Inquiry about 2022 Chevrolet Equinox",
+            "body_preview": "Dear Tammy,\n\nThank you for your inquiry about the 2022 Chevrolet Equinox (stock number STK10013). I'm pleased to confirm that this vehicle has a clean title and is in excellent condition.\n\nAs you can ..."
+          },
+          "timestamp": "2025-11-15T10:30:16.717606"
+        },
+        {
+          "action_type": "customer_response",
+          "status": "success",
+          "inquiry_id": "INQ20009",
+          "customer_name": "Chelsea Palmer",
+          "customer_email": "larsentrevor@example.net",
+          "subject": "Inquiry about pricing",
+          "offer_price": 67132.69,
+          "strategy": "Chelsea is a price shopper, so I've focused on providing value justification for the pricing while also offering to discuss any available discounts or financing options.",
+          "execution_type": "SIMULATED",
+          "email_log": {
+            "to": "larsentrevor@example.net",
+            "subject": "Inquiry about pricing",
+            "body_preview": "Dear Chelsea,\n\nThank you for your inquiry about our pricing. I understand you're comparing prices across different dealerships, and I'm happy to provide some additional information to help justify our..."
+          },
+          "timestamp": "2025-11-15T10:30:16.719507"
+        }
+      ],
+      "social_media_posts": [
+        {
+          "action_type": "social_media_post",
+          "status": "success",
+          "platform": "instagram",
+          "content_preview": "Just arrived! 2024 Ford F-150 in our showroom. This powerful truck is packed with features and price...",
+          "vehicle_vin": "1FTEW1EP8RKC12345",
+          "hashtags": [
+            "PremiumAutoSales",
+            "FordF150",
+            "TruckLife"
+          ],
+          "execution_type": "SIMULATED",
+          "timestamp": "2025-11-15T10:30:16.719507"
+        },
+        {
+          "action_type": "social_media_post",
+          "status": "success",
+          "platform": "facebook",
+          "content_preview": "Don't miss out on our 2023 BMW 3 Series (stock #STK10017) - it's a true driver's car with exceptiona...",
+          "vehicle_vin": "WBA8E9G59PNU12345",
+          "hashtags": [
+            "PremiumAutoSales",
+            "BMW3Series",
+            "LuxuryDriving"
+          ],
+          "execution_type": "SIMULATED",
+          "timestamp": "2025-11-15T10:30:16.720355"
+        }
+      ],
+      "urgent_alerts": [
+        {
+          "action_type": "urgent_alert",
+          "status": "logged",
+          "priority": "high",
+          "category": "aging_inventory",
+          "message": "The 2022 Chevrolet Equinox (stock #STK10013) has been in inventory for 67 days, which exceeds the 60-day threshold for aged vehicles. A 5% price reduction is recommended to help sell this vehicle.",
+          "recommended_action": "Approve the 5% price reduction for the 2022 Chevrolet Equinox (stock #STK10013) to help move this aged inventory.",
+          "timestamp": "2025-11-15T10:30:16.720732"
+        },
+        {
+          "action_type": "urgent_alert",
+          "status": "logged",
+          "priority": "medium",
+          "category": "aging_inventory",
+          "message": "The 2023 Toyota Corolla (stock #STK10040) has been in inventory for 68 days, which exceeds the 60-day threshold for aged vehicles. A 5% price reduction is recommended to help sell this vehicle.",
+          "recommended_action": "Approve the 5% price reduction for the 2023 Toyota Corolla (stock #STK10040) to help move this aged inventory.",
+          "timestamp": "2025-11-15T10:30:16.720732"
+        },
+        {
+          "action_type": "urgent_alert",
+          "status": "logged",
+          "priority": "medium",
+          "category": "aging_inventory",
+          "message": "The 2021 Mercedes-Benz GLC (stock #STK10016) has been in inventory for 70 days, which exceeds the 60-day threshold for aged vehicles. A 5% price reduction is recommended to help sell this vehicle.",
+          "recommended_action": "Approve the 5% price reduction for the 2021 Mercedes-Benz GLC (stock #STK10016) to help move this aged inventory.",
+          "timestamp": "2025-11-15T10:30:16.721751"
+        }
+      ]
+    },
+    "details": []
+  },
+  {
+    "timestamp": "2025-11-15T10:38:09.895977",
+    "total_actions": 10,
+    "successful_actions": 7,
+    "failed_actions": 3,
+    "actions_by_type": {
+      "price_adjustments": [
+        {
+          "vin": "1GCHK29U02E107516",
+          "status": "failed",
+          "error": "Vehicle not found",
+          "timestamp": "2025-11-15T10:38:09.897180"
+        },
+        {
+          "vin": "2T1BURHE3JC080812",
+          "status": "failed",
+          "error": "Vehicle not found",
+          "timestamp": "2025-11-15T10:38:09.897180"
+        },
+        {
+          "vin": "WDCWJ8EB9GF651834",
+          "status": "failed",
+          "error": "Vehicle not found",
+          "timestamp": "2025-11-15T10:38:09.898182"
+        }
+      ],
+      "customer_responses": [
+        {
+          "action_type": "customer_response",
+          "status": "success",
+          "inquiry_id": "INQ20000",
+          "customer_name": "Tammy Lopez",
+          "customer_email": "alicia18@example.net",
+          "subject": "Inquiry about Chevrolet Equinox (STK10013)",
+          "offer_price": 31507.41,
+          "strategy": "Provide a direct response to the customer's inquiry, offer a price reduction to help sell the aged vehicle, and invite the customer to schedule a test drive.",
+          "execution_type": "SIMULATED",
+          "email_log": {
+            "to": "alicia18@example.net",
+            "subject": "Inquiry about Chevrolet Equinox (STK10013)",
+            "body_preview": "Dear Tammy,\n\nThank you for your inquiry about the 2022 Chevrolet Equinox (stock number STK10013). I can confirm that this vehicle has a clean title. The Equinox is currently priced at $33,165.69, but ..."
+          },
+          "timestamp": "2025-11-15T10:38:09.898182"
+        },
+        {
+          "action_type": "customer_response",
+          "status": "success",
+          "inquiry_id": "INQ20006",
+          "customer_name": "Seth Martinez",
+          "customer_email": "jennifer75@example.com",
+          "subject": "Inquiry about 2021 Honda Pilot (STK10008)",
+          "offer_price": null,
+          "strategy": "Provide a warm and welcoming response, invite the customer to come see the vehicle in person, and offer to schedule a test drive.",
+          "execution_type": "SIMULATED",
+          "email_log": {
+            "to": "jennifer75@example.com",
+            "subject": "Inquiry about 2021 Honda Pilot (STK10008)",
+            "body_preview": "Dear Seth,\n\nThank you for your inquiry about the 2021 Honda Pilot (stock number STK10008). I'm glad to hear you are very interested in this vehicle. You're welcome to come see it in person today. Our ..."
+          },
+          "timestamp": "2025-11-15T10:38:09.899185"
+        },
+        {
+          "action_type": "customer_response",
+          "status": "success",
+          "inquiry_id": "INQ20009",
+          "customer_name": "Chelsea Palmer",
+          "customer_email": "larsentrevor@example.net",
+          "subject": "Inquiry about pricing (STK10044)",
+          "offer_price": null,
+          "strategy": "Acknowledge the customer's price concerns, provide justification for the current pricing, and offer to discuss any available discounts or special offers.",
+          "execution_type": "SIMULATED",
+          "email_log": {
+            "to": "larsentrevor@example.net",
+            "subject": "Inquiry about pricing (STK10044)",
+            "body_preview": "Dear Chelsea,\n\nThank you for your inquiry about our pricing. We strive to offer competitive prices on all of our vehicles, while also providing excellent value and customer service.\n\nFor the vehicle y..."
+          },
+          "timestamp": "2025-11-15T10:38:09.899185"
+        }
+      ],
+      "social_media_posts": [
+        {
+          "action_type": "social_media_post",
+          "status": "success",
+          "platform": "instagram",
+          "content_preview": "Check out this stunning 2024 Ford F-150 (stock #STK10034) with only 15 inquiries and 160 views! This...",
+          "vehicle_vin": "1FTEW1E46RFB12345",
+          "hashtags": [
+            "PremiumAutoSales",
+            "FordF150",
+            "TruckLife"
+          ],
+          "execution_type": "SIMULATED",
+          "timestamp": "2025-11-15T10:38:09.899185"
+        },
+        {
+          "action_type": "social_media_post",
+          "status": "success",
+          "platform": "facebook",
+          "content_preview": "New arrival! This 2023 BMW 3 Series (stock #STK10017) has already generated 14 inquiries and 108 vie...",
+          "vehicle_vin": "WBAJA5C59JNU12345",
+          "hashtags": [
+            "PremiumAutoSales",
+            "BMW3Series",
+            "LuxuryDriving"
+          ],
+          "execution_type": "SIMULATED",
+          "timestamp": "2025-11-15T10:38:09.900186"
+        }
+      ],
+      "urgent_alerts": [
+        {
+          "action_type": "urgent_alert",
+          "status": "logged",
+          "priority": "high",
+          "category": "aging_inventory",
+          "message": "The top 5 aged vehicles (60+ days in stock) need urgent attention to avoid further depreciation.",
+          "recommended_action": "Review the price adjustment recommendations and implement the suggested changes to help sell these vehicles.",
+          "timestamp": "2025-11-15T10:38:09.900186"
+        },
+        {
+          "action_type": "urgent_alert",
+          "status": "logged",
+          "priority": "medium",
+          "category": "customer",
+          "message": "There are several price shopper inquiries that need to be responded to in a timely manner.",
+          "recommended_action": "Review the customer response templates and personalize the messages to provide value justification and limited discounts.",
+          "timestamp": "2025-11-15T10:38:09.900186"
+        }
+      ]
+    },
+    "details": []
+  }
+]

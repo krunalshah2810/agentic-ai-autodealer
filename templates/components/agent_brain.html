@@ -1,0 +1,149 @@
+<!-- Add this section to your dashboard -->
+<div class="bg-gradient-to-br from-purple-900 to-indigo-900 rounded-lg shadow-2xl p-8 mb-8 text-white">
+    <div class="flex items-center justify-between mb-6">
+        <div>
+            <h2 class="text-3xl font-bold mb-2">🧠 Agent Brain - Live Reasoning</h2>
+            <p class="text-purple-200">Watch the AI think and make decisions in real-time</p>
+        </div>
+        <button onclick="startAgentThinking()" class="px-6 py-3 bg-white text-purple-900 rounded-lg font-bold hover:bg-purple-50 transition">
+            Activate Agent Brain
+        </button>
+    </div>
+    
+    <!-- Thinking Process Visualization -->
+    <div id="agent-thinking" class="hidden">
+        <div class="space-y-4">
+            <!-- Step 1: Data Analysis -->
+            <div id="step-1" class="thinking-step opacity-0">
+                <div class="flex items-start">
+                    <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mr-4 animate-pulse">
+                        <span class="text-2xl">📊</span>
+                    </div>
+                    <div class="flex-1">
+                        <div class="font-bold text-lg mb-2">Step 1: Analyzing Market Data</div>
+                        <div class="bg-white bg-opacity-10 rounded-lg p-4 font-mono text-sm">
+                            <div class="typing-text">Scanning 50 vehicles across inventory...</div>
+                            <div class="typing-text" style="animation-delay: 1s;">Comparing against 237 competitor listings...</div>
+                            <div class="typing-text" style="animation-delay: 2s;">Identifying pricing anomalies: 7 vehicles overpriced, 3 underpriced</div>
+                            <div class="typing-text text-green-400 font-bold" style="animation-delay: 3s;">✓ Analysis complete: $47,000 in potential optimization</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Step 2: AI Decision Making -->
+            <div id="step-2" class="thinking-step opacity-0">
+                <div class="flex items-start">
+                    <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mr-4 animate-pulse">
+                        <span class="text-2xl">🤖</span>
+                    </div>
+                    <div class="flex-1">
+                        <div class="font-bold text-lg mb-2">Step 2: Claude AI Decision Engine</div>
+                        <div class="bg-white bg-opacity-10 rounded-lg p-4 font-mono text-sm">
+                            <div class="typing-text">Invoking AWS Bedrock Claude 3.5 Sonnet...</div>
+                            <div class="typing-text" style="animation-delay: 1s;">Processing 2,847 tokens of context...</div>
+                            <div class="typing-text" style="animation-delay: 2s;">
+                                <span class="text-yellow-400">💭 Agent reasoning:</span>
+                                <div class="ml-4 mt-2 text-gray-300">
+                                    "2021 Honda Civic has been on lot for 78 days, priced $2,100 above market average. 
+                                    High demand model + aged inventory = immediate 7% price reduction recommended.
+                                    Confidence: 94%"
+                                </div>
+                            </div>
+                            <div class="typing-text text-green-400 font-bold" style="animation-delay: 4s;">✓ Generated 12 autonomous actions</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Step 3: Action Execution -->
+            <div id="step-3" class="thinking-step opacity-0">
+                <div class="flex items-start">
+                    <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mr-4 animate-pulse">
+                        <span class="text-2xl">⚡</span>
+                    </div>
+                    <div class="flex-1">
+                        <div class="font-bold text-lg mb-2">Step 3: Autonomous Execution</div>
+                        <div class="bg-white bg-opacity-10 rounded-lg p-4 font-mono text-sm">
+                            <div class="typing-text text-yellow-400">💰 Adjusting 5 vehicle prices...</div>
+                            <div class="typing-text" style="animation-delay: 0.5s;">   • STK10023: $28,500 → $26,995 (-5.3%)</div>
+                            <div class="typing-text" style="animation-delay: 1s;">   • STK10047: $34,200 → $32,450 (-5.1%)</div>
+                            <div class="typing-text text-blue-400" style="animation-delay: 2s;">📧 Drafting 8 personalized customer responses...</div>
+                            <div class="typing-text" style="animation-delay: 2.5s;">   • Hot lead: Sarah Johnson - "Your 2023 RAV4..."</div>
+                            <div class="typing-text" style="animation-delay: 3s;">   • Price shopper: Mike Chen - "Let me explain value..."</div>
+                            <div class="typing-text text-purple-400" style="animation-delay: 4s;">📱 Creating 3 social media posts...</div>
+                            <div class="typing-text text-green-400 font-bold" style="animation-delay: 5s;">✓ All actions executed successfully!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Results Summary -->
+            <div id="step-4" class="thinking-step opacity-0">
+                <div class="bg-gradient-to-r from-green-500 to-blue-500 rounded-lg p-6">
+                    <div class="text-2xl font-bold mb-4">🎯 Agent Cycle Complete</div>
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="bg-white bg-opacity-20 rounded-lg p-4">
+                            <div class="text-3xl font-bold">12</div>
+                            <div class="text-sm">Actions Taken</div>
+                        </div>
+                        <div class="bg-white bg-opacity-20 rounded-lg p-4">
+                            <div class="text-3xl font-bold">$47K</div>
+                            <div class="text-sm">Value Created</div>
+                        </div>
+                        <div class="bg-white bg-opacity-20 rounded-lg p-4">
+                            <div class="text-3xl font-bold">23s</div>
+                            <div class="text-sm">Execution Time</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+@keyframes typing {
+    from { 
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.typing-text {
+    opacity: 0;
+    animation: typing 0.3s ease-out forwards;
+}
+
+.thinking-step {
+    transition: opacity 0.5s ease-out;
+}
+</style>
+
+<script>
+function startAgentThinking() {
+    // Show the thinking container
+    document.getElementById('agent-thinking').classList.remove('hidden');
+    
+    // Animate each step with delays
+    setTimeout(() => {
+        document.getElementById('step-1').style.opacity = '1';
+    }, 500);
+    
+    setTimeout(() => {
+        document.getElementById('step-2').style.opacity = '1';
+    }, 5000);
+    
+    setTimeout(() => {
+        document.getElementById('step-3').style.opacity = '1';
+    }, 10000);
+    
+    setTimeout(() => {
+        document.getElementById('step-4').style.opacity = '1';
+    }, 16000);
+}
+</script>
