@@ -234,7 +234,7 @@ Future enhancements:
 ![Agent Brain](screenshots/Agent_brain.png)
 
 ### AI Content Generator
-![Content Generator](screenshots/content-generator.png)
+![Content Generator](screenshots/content_generator.png)
 
 ### Value created by agent
 ![Content Generator](screenshots/Value_by_Agent.png)
