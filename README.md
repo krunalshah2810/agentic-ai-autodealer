@@ -1,7 +1,7 @@
 # 🤖 Agentic AI AutoDealer
 
 ## Demo 
-![Agent Brain](screenshots/agentic_ai_autodealer.mp4)
+[Download Demo Video](screenshots/agentic_ai_autodealer.mp4)
 
 **Autonomous inventory management system for car dealerships powered by AWS Bedrock & Claude 3.5 Sonnet**
 
