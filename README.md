@@ -1,5 +1,8 @@
 # 🤖 Agentic AI AutoDealer
 
+## Demo 
+![Agent Brain](screenshots/Agentic_AI_Auto_Dealer.mp4)
+
 **Autonomous inventory management system for car dealerships powered by AWS Bedrock & Claude 3.5 Sonnet**
 
 
@@ -226,6 +229,7 @@ Future enhancements:
 - [ ] Multi-location support
 - [ ] Mobile app for sales team
 - [ ] Voice-enabled customer interactions
+
 
 
 ## 📸 Screenshots
